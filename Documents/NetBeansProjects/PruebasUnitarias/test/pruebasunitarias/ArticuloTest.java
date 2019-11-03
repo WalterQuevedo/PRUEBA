@@ -39,7 +39,7 @@ public class ArticuloTest {
     }
 
     @Test
-    public void test() {
+    public void test(){
        Articulo instancia = new Articulo();
         int nro_articulo=123;
         String tipo_articulo = "calefones";
@@ -50,5 +50,5 @@ public class ArticuloTest {
        
    }
         
-    }    
-
+    
+}
