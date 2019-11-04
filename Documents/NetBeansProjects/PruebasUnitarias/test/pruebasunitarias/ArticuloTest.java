@@ -39,16 +39,25 @@ public class ArticuloTest {
     }
 
     @Test
-    public void test(){
-       Articulo instancia = new Articulo();
+    public void testCampoExistente(){
+       Articulo instancia = new Articulo(123,"calefones","universal");
         int nro_articulo=123;
         String tipo_articulo = "calefones";
         String nombre="universal";
-       Field field = instancia.getClass().getDeclaredField("nro_articulo");
-       field.setAccessible(true);
-       String unAtributoPrivado = (String) field.get(instancia);
-       
+       //try {            
+         //Articulo c = new Articulo();
+         //Class cls = c.getClass();
+         //Field campo  = cls.getDeclaredField("nro_articulo");
+         //System.out.println("Field = " + campo.toString());
+     // } catch(Exception e) {
+         //System.out.println(e.toString());
+         instancia.nro_articulo=123;
+         instancia.tipo_articulo="algo";
+         instancia.nombre="algo";
+      }
    }
         
+   
+        
     
-}
+
